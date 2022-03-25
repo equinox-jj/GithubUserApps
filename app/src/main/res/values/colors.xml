@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E80606</color>
+    <color name="grey">#5F5A5A</color>
+
+    <!-- Colors App -->
+    <color name="teal_me_no_lies">#0ba5a8</color>
+    <color name="marine_wonder">#197476</color>
+    <color name="electric_blue">#80f7f9</color>
+    <color name="nora_forest">#033435</color>
+    <color name="theatre_dress">#294242</color>
+
+    <color name="tab_layout_background">#7E5E5E</color>
+    <color name="apps_background">#513737</color>
+    <color name="card_background">#422525</color>
+    <color name="secondary_background">#422525</color>
+    <color name="secondary_variant_background">#513737</color>
+    <color name="toolbar_background">#422525</color>
+    <color name="statusbar_color">#2B1818</color>
+    <color name="text_color">#FF000000</color>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_container"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.githubuserapps.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.githubuserapps.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_followerFragment"
+            app:destination="@id/followerFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_followingFragment"
+            app:destination="@id/followingFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="avatar_url"
+            app:argType="string" />
+        <argument
+            android:name="html_url"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.githubuserapps.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/followerFragment"
+        android:name="com.githubuserapps.ui.follower.FollowerFragment"
+        android:label="Follower"
+        tools:layout="@layout/fragment_follower" />
+
+
+    <fragment
+        android:id="@+id/followingFragment"
+        android:name="com.githubuserapps.ui.following.FollowingFragment"
+        android:label="Following"
+        tools:layout="@layout/fragment_following" />
+
+
+</navigation>
