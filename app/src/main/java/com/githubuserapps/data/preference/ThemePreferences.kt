@@ -15,22 +15,21 @@ private val Context.dataStore by preferencesDataStore(DATASTORE_PREFERENCE)
 
 class SettingsPreferences(context: Context) {
 
-    private val dataStore: DataStore<Preferences> = context.dataStore
-
     companion object {
         private val THEME_KEY = booleanPreferencesKey(THEME_MODE_KEY)
     }
 
-    suspend fun saveToDataStore(isNightMode: Boolean) {
+    private val dataStore: DataStore<Preferences> = context.dataStore
+
+    suspend fun setThemeMode(isNightMode: Boolean) {
         dataStore.edit { preferences ->
             preferences[THEME_KEY] = isNightMode
         }
     }
 
-    val themeMode: Flow<Boolean> = dataStore.data
-        .map { preferences ->
-            val themeMode = preferences[THEME_KEY] ?: false
-            themeMode
-        }
+    fun getThemeMode(): Flow<Boolean> = dataStore.data.map { preferences ->
+        val themeMode = preferences[THEME_KEY] ?: false
+        themeMode
+    }
 
 }

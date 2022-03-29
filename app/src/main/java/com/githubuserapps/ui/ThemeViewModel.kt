@@ -2,6 +2,7 @@ package com.githubuserapps.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.githubuserapps.data.preference.SettingsPreferences
 import kotlinx.coroutines.Dispatchers
@@ -11,11 +12,13 @@ class ThemeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val uiDataStore = SettingsPreferences(application)
 
-    val getThemeMode = uiDataStore.themeMode
+    fun themeState() = uiDataStore.getThemeMode()
 
-    fun saveToDataStore(isNightMode: Boolean) {
+    fun getThemeMode() = uiDataStore.getThemeMode().asLiveData()
+
+    fun setThemeMode(isNightMode: Boolean) {
         viewModelScope.launch(Dispatchers.IO) {
-            uiDataStore.saveToDataStore(isNightMode)
+            uiDataStore.setThemeMode(isNightMode)
         }
     }
 }

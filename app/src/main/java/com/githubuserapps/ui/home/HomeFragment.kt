@@ -49,7 +49,7 @@ class HomeFragment : Fragment() {
         inflater.inflate(R.menu.menu_theme, menu)
         // Dark Mode Menu
         lifecycleScope.launch {
-            val isChecked = mThemeViewModel.getThemeMode.first()
+            val isChecked = mThemeViewModel.themeState().first()
             val item = menu.findItem(R.id.dark_mode)
             item.isChecked = isChecked
             setThemeMode(item, isChecked)
@@ -69,11 +69,11 @@ class HomeFragment : Fragment() {
     private fun setThemeMode(item: MenuItem, isChecked: Boolean) {
         if (isChecked) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            mThemeViewModel.saveToDataStore(true)
+            mThemeViewModel.setThemeMode(true)
             item.setIcon(R.drawable.ic_moon)
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            mThemeViewModel.saveToDataStore(false)
+            mThemeViewModel.setThemeMode(false)
             item.setIcon(R.drawable.ic_sun)
         }
     }
