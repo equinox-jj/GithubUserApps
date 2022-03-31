@@ -23,4 +23,6 @@ GithubUserApps is an application that can Search and Displaying the details of a
 # Project Setup:
 You need a [Github Personal Access Token](https://github.com/settings/tokens) to make the project work.
 And then put your Access Token in utils/Constant.kt
+```
 https://github.com/equinox-jj/GithubUserApps/blob/62c48584ccd2cd9900b356ab6871f00d8615e4b1/app/src/main/java/com/githubuserapps/util/Constant.kt#L9
+```
