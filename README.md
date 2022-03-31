@@ -1,5 +1,5 @@
 # GithubUserApps
-GithubUserApps is an application that can Search and Displaying the details of a User github. this apps is written in Kotlin with MVVM Architecture, RXJava, Kotlin Coroutines, ROOM Database, Retrofit, and Data Store Preferences to saving the Dark/Light Theme Value.
+GithubUserApps is an application that can Search and Displaying the details of a User github. this apps is written in Kotlin with MVVM Architecture, RXJava3, Kotlin Coroutines, ROOM Database, Retrofit, and Data Store Preferences to saving the Dark/Light Theme Key-Value.
 
 # Features:
 * Using MVVM (Model-View-ViewModel) Architecture.
@@ -21,7 +21,7 @@ GithubUserApps is an application that can Search and Displaying the details of a
 * [Lottie Animation](https://airbnb.io/lottie/#/android)
 
 # Project Setup:
-You need a Github[Personal Access Token](https://github.com/settings/tokens) to make the project work.
+You need a Github [Personal Access Token](https://github.com/settings/tokens) to make the project work.
 And then put your Access Token in [utils/Constant.kt](https://github.com/equinox-jj/GithubUserApps/blob/main/app/src/main/java/com/githubuserapps/util/Constant.kt)
 ```
 const val TOKEN = "Put Your Access Token Here"
