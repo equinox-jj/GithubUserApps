@@ -1,5 +1,6 @@
 package com.githubuserapps.ui.splash
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -11,6 +12,7 @@ import com.githubuserapps.R
 import com.githubuserapps.ui.ThemeViewModel
 import com.githubuserapps.ui.main.MainActivity
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreen : AppCompatActivity() {
 
     private val mThemeViewModel: ThemeViewModel by viewModels()
@@ -39,7 +41,7 @@ class SplashScreen : AppCompatActivity() {
     private fun moveToMainActivity() {
         val intent = Intent(this@SplashScreen, MainActivity::class.java)
         startActivity(intent)
-        finishAffinity()
+        finish()
     }
 
 }
