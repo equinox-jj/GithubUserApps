@@ -29,3 +29,6 @@ And then put your Access Token in [utils/Constant.kt](https://github.com/equinox
 ```
 const val TOKEN = "Put Your Access Token Here"
 ```
+
+# Download Apk:
+* [GithubUserApps.apk](https://github.com/equinox-jj/GithubUserApps/raw/main/docs/GithubUserApps.apk)
