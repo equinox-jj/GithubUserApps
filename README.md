@@ -31,4 +31,4 @@ const val TOKEN = "Put Your Access Token Here"
 ```
 
 # Download Apk:
-* [GithubUserApps.apk](https://github.com/equinox-jj/GithubUserApps/raw/main/docs/GithubUserApps.apk)
+* [GithubUserApps.apk](https://drive.google.com/u/0/uc?id=1JQn1d7vzP7no4fkOqOF1rob7_VtvtL08&export=download&confirm=t)
