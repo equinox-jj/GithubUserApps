@@ -4,16 +4,6 @@ GithubUserApps is an application that can Search and Displaying the details of a
 # Preview Apps:
 ![Image Apps](https://github.com/equinox-jj/GithubUserApps/blob/main/docs/apps_img.png)
 
-# Features:
-* Using MVVM (Model-View-ViewModel) Architecture.
-* Using RxJava3 and Coroutines.
-* Using Retrofit to request api network.
-* Using View Binding to bind the view.
-* Using Navigation Component to navigate between the Fragments.
-* Using Data Store Preferences to save the key-value of the Dark Mode.
-* Using Image Coil to load the Image.
-* Using ROOM Database for the local database.
-
 # Dependencies:
 * [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
 * [Room Database](https://developer.android.com/training/data-storage/room)
